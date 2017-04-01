@@ -5,5 +5,12 @@
       "authorEmail": "<@Brian_Sipple>",
       "authorUrl": "brian@echobind.com"
     }
+  },
+  "generator-savvy-css": {
+    "promptValues": {
+      "githubUserName": "BrianSipple",
+      "authorName": "Brian Sipple",
+      "authorContact": "brian@echobind.com"
+    }
   }
 }

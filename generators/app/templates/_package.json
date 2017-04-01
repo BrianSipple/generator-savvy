@@ -1,0 +1,59 @@
+{
+  "name": "<%= modulePackageName %>",
+  "version": "0.0.0",
+  "description": "<%= moduleDescription %>",
+  "main": "build/<%= moduleFileName %>",
+  "style": "build/<%= moduleFileName %>",
+  "keywords": [
+    "savvy-css",
+    "savvy-css <%= moduleNameSpaced %>",
+    "savvy-css <%= concernType %>",
+    "css"
+  ],
+  "repository": {
+    "url": "<%= repositoryBaseURL %>.git",
+    "type": "git"
+  },
+  "files": [
+    "index.css",
+    "build/"
+  ],
+  "bugs": {
+    "url": "<%= repositoryBaseURL %>/issues"
+  },
+  "homepage": "<%= repositoryBaseURL %>",
+  "author": "<%= authorName %> <<%= authorContactName %>>",
+  "license": "MIT",
+  "devDependencies": {
+    "cssnano": "^3.10.0",
+    "cssstats": "^3.0.0",
+    "del-cli": "^0.2.1",
+    "live-server": "^1.2.0",
+    "postcss-cli": "^3.0.0",
+    "postcss-cssnext": "^2.10.0",
+    "postcss-custom-properties": "^5.0.2",
+    "postcss-discard-comments": "^2.0.4",
+    "postcss-import": "^9.1.0",
+    "postcss-reporter": "^3.0.0",
+    "stylelint": "^7.9.0",
+    "stylelint-config-savvy": "^0.1.0"
+  },
+  "scripts": {
+    "clean": "del build/**",
+    "setup": "mkdir -p build",
+    "transform": "postcss index.css -o build/<%= moduleFileName %> -c postcss.config.js",
+    "transform:watch": "postcss index.css -o build/<%= moduleFileName %> -c postcss.config.js -w",
+    "minify": "postcss build/<%= moduleFileName %>.css -u cssnano -o build/<%= moduleFileName %>.min.css",
+    "custom-props": "postcss index.css -u postcss-import -o build/<%= moduleFileName %>-cp.css",
+    "custom-props:min": "postcss index.css -u postcss-import -u cssnano -o build/<%= moduleFileName %>-cp.min.css",
+    "build:dist": "npm run clean && npm run setup && npm run transform",
+    "build:dist:min": "npm run build:dist && npm run minify",
+    "build:test": "npm run clean && postcss test/index-test.css -u postcss-import -u postcss-cssnext -o build/test.css",
+    "prepublish": "npm run clean && npm run setup && npm run build:dist",
+    "serve": "live-server --port=9823",
+    "serve:test": "npm run build:test && npm run serve",
+    "lint:css": "npm run setup && postcss index.css -o build/linted.css --config test/postcss.config.js && rm build/linted.css",
+    "test": "npm run lint:css",
+    "release": "npmpub"
+  }
+}
