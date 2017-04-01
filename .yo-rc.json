@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "BrianSipple",
+      "authorEmail": "<@Brian_Sipple>",
+      "authorUrl": "brian@echobind.com"
+    }
+  }
+}

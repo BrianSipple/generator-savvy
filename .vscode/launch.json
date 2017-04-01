@@ -1,0 +1,51 @@
+{
+  // Use IntelliSense to learn about possible Node.js debug attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Generator",
+      "program": "${workspaceRoot}/generators/app/index.js"
+    },
+
+    // This command has two requirements
+    //
+    // 1) First, `npm link` the project on your local machine
+    //
+    // 2) Create `.vscode/settings.json` file in this project
+    // with a `YO_PATH` variable specifying the absolute path on
+    // your machine to the `yo` binary.
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Linked Generator",
+      "program": "${config:YO_PATH}",
+      "args": [
+        "savvy-css",
+        "--targetDir=tmp"
+      ],
+      "console": "integratedTerminal"
+    },
+
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Tests",
+      "program": "${workspaceRoot}/node_modules/.bin/jest",
+      "args": [
+        "--runInBand"
+      ]
+    },
+
+    {
+      "type": "node",
+      "request": "attach",
+      "name": "Attach to Process",
+      "address": "localhost",
+      "port": 5858
+    }
+  ]
+}
