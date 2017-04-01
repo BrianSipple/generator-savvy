@@ -5,7 +5,7 @@ const chalk = require('chalk');
 const yosay = require('yosay');
 const capitalize = require('lodash.capitalize');
 const { CONCERNS, CONCERN_UTILITY, pluralizeConcern } = require('../../utils/concerns');
-const { generateModuleName, generatePackageName, generateGithubBaseURL } = require('../../utils/common');
+const { generateModuleName, generatePackageName, generateGithubBaseURL, generateTextualDate } = require('../../utils/common');
 
 module.exports = class SavvyCSSGenerator extends Generator {
   prompting() {
@@ -64,6 +64,7 @@ module.exports = class SavvyCSSGenerator extends Generator {
       const moduleDisplayName = capitalize(moduleNameSpaced);
       const modulePackageName = generatePackageName(moduleName);
       const authorContactName = authorContact ? authorContact : githubUserName;
+      const currentYear = new Date().getFullYear();
 
       // access props later using `this.props`
       this.props = Object.assign({}, props, {
@@ -74,7 +75,8 @@ module.exports = class SavvyCSSGenerator extends Generator {
         authorContactName,
         moduleFileName: `${moduleName}.css`,
         repositoryBaseURL: generateGithubBaseURL(moduleName),
-        currentYear: new Date().getFullYear(),
+        currentYear,
+        textualDate: generateTextualDate()
       });
     });
   }
@@ -104,7 +106,7 @@ module.exports = class SavvyCSSGenerator extends Generator {
       this.props
     );
 
-    // Move files whose templates needed to be named differently
+    // "Move" files whose templates needed to be named differently
     // than their final file name.
     move('_package.json', 'package.json');
     move('gitignore', '.gitignore');
