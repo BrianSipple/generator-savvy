@@ -5,9 +5,9 @@
   "main": "build/<%= moduleFileName %>",
   "style": "build/<%= moduleFileName %>",
   "keywords": [
-    "savvy-css",
-    "savvy-css <%= moduleNameSpaced %>",
-    "savvy-css <%= concernType %>",
+    "savvycss",
+    "savvycss <%= moduleNameSpaced %>",
+    "savvycss <%= concernType %>",
     "css"
   ],
   "repository": {

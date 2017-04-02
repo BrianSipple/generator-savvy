@@ -10,7 +10,7 @@ const CONCERNS = [CONCERN_UTILITY, CONCERN_OBJECT_PATTERN, CONCERN_GARNISH, CONC
 
 const PLURALIZED_CONCERNS = {
   [CONCERN_UTILITY.toLowerCase()]: 'Utilities',
-  [CONCERN_OBJECT_PATTERN.toLowerCase()]: 'Objects',
+  [CONCERN_OBJECT_PATTERN.toLowerCase()]: 'Object Patterns',
   [CONCERN_GARNISH.toLowerCase()]: 'Garnishes',
   [CONCERN_VARIABLE.toLowerCase()]: 'Variables',
   [CONCERN_SETTING.toLowerCase()]: 'Settings'

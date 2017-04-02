@@ -61,7 +61,7 @@ module.exports = class SavvyCSSGenerator extends Generator {
 
       const moduleName = generateModuleName(moduleSubject, concernType);
       const moduleNameSpaced = moduleName.replace(/-/g, ' ');
-      const moduleDisplayName = capitalize(moduleNameSpaced);
+      const moduleDisplayName = `Savvy CSS ${moduleNameSpaced.split(' ').map(capitalize).join(' ')}`;
       const modulePackageName = generatePackageName(moduleName);
       const authorContactName = authorContact ? authorContact : githubUserName;
       const currentYear = new Date().getFullYear();

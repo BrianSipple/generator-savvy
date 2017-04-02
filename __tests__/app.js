@@ -6,7 +6,9 @@ const helpers = require('yeoman-test');
 const { CONCERN_OBJECT_PATTERN } = require('../utils/concerns');
 
 describe('generator-savvy-css:app', () => {
-  const TEST_MODULE_NAME = 'grid-objects';
+  const TEST_MODULE_NAME = 'grid-object-patterns';
+  const TEST_MODULE_NAME_SPACED = 'grid object patterns';
+  const TEST_PACKAGE_NAME = 'savvycss-grid-object-patterns';
 
   beforeAll(() => {
     return helpers
@@ -29,7 +31,26 @@ describe('generator-savvy-css:app', () => {
       'postcss.config.js',
       'stylelint.config.js',
       'package.json',
-      `lib/${TEST_MODULE_NAME}.css`
+      `lib/${TEST_MODULE_NAME}.css`,
+      `test/index-test.css`,
+      `test/index.html`,
+      `test/postcss.config.js`
     ]);
+  });
+
+  it('fills package.json with correct information', () => {
+    assert.JSONFileContent('package.json', { // eslint-disable-line new-cap
+      name: TEST_PACKAGE_NAME,
+      main: `build/${TEST_MODULE_NAME}.css`,
+      style: `build/${TEST_MODULE_NAME}.css`,
+      devDependencies: {
+        'postcss-cssnext': '^2.10.0',
+        'postcss-cli': '^3.0.0'
+      },
+      keywords: [
+        'savvycss',
+        `savvycss ${TEST_MODULE_NAME_SPACED}`
+      ]
+    });
   });
 });
