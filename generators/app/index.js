@@ -21,7 +21,7 @@ module.exports = class SavvyCSSGenerator extends Generator {
         message: 'Which type of component/module are you looking to create?',
         choices: CONCERNS,
         default: CONCERN_UTILITY,
-        filter: (concernType) => pluralizeConcern(concernType).toLowerCase()
+        filter: concernType => pluralizeConcern(concernType).toLowerCase()
       },
       {
         type: 'input',
@@ -38,7 +38,7 @@ module.exports = class SavvyCSSGenerator extends Generator {
         type: 'input',
         name: 'githubUserName',
         message: 'What is your GitHub username',
-        store: true,
+        store: true
       },
       {
         type: 'input',
@@ -53,7 +53,7 @@ module.exports = class SavvyCSSGenerator extends Generator {
         message: 'What is your preferred contact name (email address, Twitter handle, etc)?',
         store: true,
         default: ''
-      },
+      }
     ];
 
     return this.prompt(prompts).then(props => {
@@ -66,16 +66,17 @@ module.exports = class SavvyCSSGenerator extends Generator {
       const authorContactName = authorContact ? authorContact : githubUserName;
       const currentYear = new Date().getFullYear();
 
-      // access props later using `this.props`
+      // Access props later using `this.props`
       this.props = Object.assign({}, props, {
         moduleName,
         modulePackageName,
         moduleDisplayName,
         moduleNameSpaced,
         authorContactName,
-        moduleFileName: `${moduleName}.css`,
-        repositoryBaseURL: generateGithubBaseURL(moduleName),
         currentYear,
+        moduleFileName: `${moduleName}.css`,
+        licenseOwner: 'Echobind',
+        repositoryBaseURL: generateGithubBaseURL(moduleName),
         textualDate: generateTextualDate()
       });
     });
