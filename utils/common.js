@@ -3,9 +3,7 @@
 const MONTH_NAMES = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
 const kebabCase = require('lodash.kebabcase');
-const capitalize = require('lodash.capitalize');
 const { pluralizeConcern } = require('./concerns');
-
 
 function generateModuleName(moduleSubject, concernType) {
   return `${kebabCase(`${moduleSubject} ${pluralizeConcern(concernType)}`)}`;
