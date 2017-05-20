@@ -8,7 +8,7 @@ const { CONCERN_OBJECT_PATTERN } = require('../utils/concerns');
 describe('generator-savvy-css:app', () => {
   const TEST_MODULE_NAME = 'grid-object-patterns';
   const TEST_MODULE_NAME_SPACED = 'grid object patterns';
-  const TEST_PACKAGE_NAME = 'savvycss-grid-object-patterns';
+  const TEST_PACKAGE_NAME = 'grid-object-patterns';
 
   beforeAll(() => {
     return helpers
@@ -48,8 +48,8 @@ describe('generator-savvy-css:app', () => {
         'postcss-cli': '^3.0.0'
       },
       keywords: [
-        'savvycss',
-        `savvycss ${TEST_MODULE_NAME_SPACED}`
+        'savvy-css',
+        `savvy-css ${TEST_MODULE_NAME_SPACED}`
       ]
     });
   });

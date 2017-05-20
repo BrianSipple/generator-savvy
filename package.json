@@ -1,11 +1,13 @@
 {
-  "name": "generator-savvy-css",
+  "name": "@savvy-css/generator-savvy-css",
   "version": "0.0.0",
   "description": "Generator for scaffolding out a Savvy module or utility.",
-  "homepage": "git@github.com:echobind/savvy-css.git",
+  "homepage": "git@github.com:savvy-css.git",
+  "repository": "git@github.com:savvy-css/generator-savvy-css.git",
+  "license": "MIT",
   "author": {
-    "name": "BrianSipple",
-    "email": "brian@echobind.com",
+    "name": "Brian Sipple",
+    "email": "brsipple42@gmail.com",
     "url": "https://twitter.com/Brian_Sipple"
   },
   "files": [
@@ -14,7 +16,7 @@
   "main": "generators/app/index.js",
   "keywords": [
     "yeoman-generator",
-    "savvycss",
+    "savvy-css",
     "generator",
     "css",
     "functional css"
@@ -55,7 +57,5 @@
         "always"
       ]
     }
-  },
-  "repository": "git@github.com:echobind/generator-savvy-css.git",
-  "license": "MIT"
+  }
 }

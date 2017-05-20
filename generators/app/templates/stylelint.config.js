@@ -1,4 +1,4 @@
 /* eslint-env node */
 module.exports = {
-  extends: 'stylelint-config-echobind'
+  extends: 'stylelint-config-savvy'
 };

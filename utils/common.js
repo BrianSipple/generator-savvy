@@ -10,11 +10,11 @@ function generateModuleName(moduleSubject, concernType) {
 }
 
 function generatePackageName(moduleName) {
-  return `savvycss-${moduleName}`;
+  return `${moduleName}`;
 }
 
 function generateGithubBaseURL(moduleName) {
-  return `https://github.com/echobind/savvy-css/modules/${moduleName}`;
+  return `https://github.com/savvy-css/${moduleName}`;
 }
 
 function generateTextualDate() {

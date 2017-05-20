@@ -30,12 +30,12 @@ yo savvy-css
 
 ## License
 
-MIT © 2017 [Echobind](https://github.com/echobind)
+MIT © 2017 [Brian Sipple](https://github.com/BrianSipple)
 
 
 [npm-image]: https://badge.fury.io/js/generator-savvy-css.svg
 [npm-url]: https://npmjs.org/package/generator-savvy-css
-[circle-image]: https://circleci.com/gh/echobind/generator-savvy-css/tree/master.svg?style=svg&circle-token={{CIRCLE_TOKEN}}
-[circle-url]: https://circleci.com/gh/echobind/generator-savvy-css/tree/master
-[daviddm-image]: https://david-dm.org/echobind/generator-savvy-css.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/echobind/generator-savvy-css
+[circle-image]: https://circleci.com/gh/savvy-css/generator-savvy-css/tree/master.svg?style=svg&circle-token={{CIRCLE_TOKEN}}
+[circle-url]: https://circleci.com/gh/savvy-css/generator-savvy-css/tree/master
+[daviddm-image]: https://david-dm.org/savvy-css/generator-savvy-css.svg?theme=shields.io
+[daviddm-url]: https://david-dm.org/savvy-css/generator-savvy-css

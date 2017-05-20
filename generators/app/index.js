@@ -75,7 +75,7 @@ module.exports = class SavvyCSSGenerator extends Generator {
         authorContactName,
         currentYear,
         moduleFileName: `${moduleName}.css`,
-        licenseOwner: 'Echobind',
+        licenseOwner: 'Brian Sipple',
         repositoryBaseURL: generateGithubBaseURL(moduleName),
         textualDate: generateTextualDate()
       });
