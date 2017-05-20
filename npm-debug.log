@@ -1,0 +1,145 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/brian/n/bin/node', '/home/brian/n/bin/npm', 'publish' ]
+2 info using npm@3.10.10
+3 info using node@v6.10.3
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/mnt/c/Users/brsip/savvy-css/generator-savvy',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /home/brian/.npm/@savvy-css/generator-savvy-css/0.0.0/package.tgz not in flight; packing
+9 verbose correctMkdir /home/brian/.npm correctMkdir not in flight; initializing
+10 info lifecycle @savvy-css/generator-savvy-css@0.0.0~prepublish: @savvy-css/generator-savvy-css@0.0.0
+11 verbose lifecycle @savvy-css/generator-savvy-css@0.0.0~prepublish: unsafe-perm in lifecycle true
+12 verbose lifecycle @savvy-css/generator-savvy-css@0.0.0~prepublish: PATH: /home/brian/n/lib/node_modules/npm/bin/node-gyp-bin:/mnt/c/Users/brsip/savvy-css/generator-savvy/node_modules/.bin:/home/brian/.rbenv/shims:/home/brian/.rbenv/bin:/usr/local/bin:/usr/local/sbin:/home/brian/n/bin:/home/brian/.config/yarn/global/node_modules/.bin:/Applications/Postgres.app/Contents/Versions/latest/bin:/Applications/Julia-0.5.app/Contents/Resources/julia/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/Python27:/mnt/c/Python27/Scripts:/mnt/c/Python36/Scripts:/mnt/c/Python36:/mnt/c/Windows/System32:/mnt/c/Windows:/mnt/c/Windows/System32/wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Users/brsip/AppData/Roaming/nvm:/mnt/c/Program Files/nodejs:/mnt/c/Program Files/Git/cmd:/mnt/c/ProgramData/chocolatey/lib/Elixir/bin:/mnt/c/Program Files (x86)/Yarn/bin:/mnt/c/Users/brsip/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files (x86)/Microsoft VS Code/bin:/mnt/c/Users/brsip/AppData/Roaming/npm:/mnt/c/Users/brsip/AppData/Local/Yarn/bin
+13 verbose lifecycle @savvy-css/generator-savvy-css@0.0.0~prepublish: CWD: /mnt/c/Users/brsip/savvy-css/generator-savvy
+14 silly lifecycle @savvy-css/generator-savvy-css@0.0.0~prepublish: Args: [ '-c', 'nsp check' ]
+15 silly lifecycle @savvy-css/generator-savvy-css@0.0.0~prepublish: Returned: code: 0  signal: null
+16 verbose tar pack [ '/home/brian/.npm/@savvy-css/generator-savvy-css/0.0.0/package.tgz',
+16 verbose tar pack   '/mnt/c/Users/brsip/savvy-css/generator-savvy' ]
+17 verbose tarball /home/brian/.npm/@savvy-css/generator-savvy-css/0.0.0/package.tgz
+18 verbose folder /mnt/c/Users/brsip/savvy-css/generator-savvy
+19 verbose addLocalTarball adding from inside cache /home/brian/.npm/@savvy-css/generator-savvy-css/0.0.0/package.tgz
+20 verbose correctMkdir /home/brian/.npm correctMkdir not in flight; initializing
+21 silly cache afterAdd @savvy-css/generator-savvy-css@0.0.0
+22 verbose afterAdd /home/brian/.npm/@savvy-css/generator-savvy-css/0.0.0/package/package.json not in flight; writing
+23 verbose correctMkdir /home/brian/.npm correctMkdir not in flight; initializing
+24 verbose afterAdd /home/brian/.npm/@savvy-css/generator-savvy-css/0.0.0/package/package.json written
+25 silly publish { name: '@savvy-css/generator-savvy-css',
+25 silly publish   version: '0.0.0',
+25 silly publish   description: 'Generator for scaffolding out a Savvy module or utility.',
+25 silly publish   homepage: 'http://git@github.com:savvy-css.git',
+25 silly publish   repository:
+25 silly publish    { type: 'git',
+25 silly publish      url: 'git+ssh://git@github.com/savvy-css/generator-savvy-css.git' },
+25 silly publish   license: 'MIT',
+25 silly publish   author:
+25 silly publish    { name: 'Brian Sipple',
+25 silly publish      email: 'brsipple42@gmail.com',
+25 silly publish      url: 'https://twitter.com/Brian_Sipple' },
+25 silly publish   files: [ 'generators', 'utils' ],
+25 silly publish   main: 'generators/app/index.js',
+25 silly publish   keywords:
+25 silly publish    [ 'yeoman-generator',
+25 silly publish      'savvy-css',
+25 silly publish      'generator',
+25 silly publish      'css',
+25 silly publish      'functional css' ],
+25 silly publish   devDependencies:
+25 silly publish    { eslint: '^3.18.0',
+25 silly publish      'eslint-config-xo-space': '^0.16.0',
+25 silly publish      jest: '^19.0.2',
+25 silly publish      'jest-cli': '^19.0.1',
+25 silly publish      'lodash.capitalize': '^4.2.1',
+25 silly publish      'lodash.kebabcase': '^4.1.1',
+25 silly publish      nsp: '^2.6.3',
+25 silly publish      'yeoman-assert': '^3.0.0',
+25 silly publish      'yeoman-test': '^1.6.0' },
+25 silly publish   dependencies:
+25 silly publish    { '@savvy-css/generator-savvy-css': '^0.0.0',
+25 silly publish      chalk: '^1.1.3',
+25 silly publish      global: '^4.3.2',
+25 silly publish      'yeoman-generator': '^1.0.0',
+25 silly publish      yosay: '^2.0.0' },
+25 silly publish   jest: { testEnvironment: 'node' },
+25 silly publish   scripts:
+25 silly publish    { prepublish: 'nsp check',
+25 silly publish      pretest: 'eslint . --ignore-path .gitignore --fix',
+25 silly publish      test: 'jest' },
+25 silly publish   eslintConfig:
+25 silly publish    { extends: 'xo-space',
+25 silly publish      env: { jest: true, node: true },
+25 silly publish      rules: { 'object-curly-spacing': [Object] } },
+25 silly publish   readme: '# generator-savvy-css \n\n[![NPM version][npm-image]][npm-url] \n[![Build Status][circle-image]][circle-url] \n[![Dependency Status][daviddm-image]][daviddm-url]\n\n> Generator for scaffolding out a Savvy module or utility.\n\n## Installation\n\nFirst, install [Yeoman](http://yeoman.io) and this generator using either [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/))...\n\n```bash\nnpm install -g yo\nnpm install -g @savvy-css/generator-savvy-css\n```\n\n... or [yarn](https://yarnpkg.com/en/).\n\n```bash\nyarn global add yo\nyarn global add @savvy-css/generator-savvy-css\n```\n\nThen generate your new project:\n\n```bash\nyo savvy-css\n```\n\n## License\n\nMIT © 2017 [Brian Sipple](https://github.com/BrianSipple)\n\n\n[npm-image]: https://badge.fury.io/js/generator-savvy-css.svg\n[npm-url]: https://npmjs.org/package/generator-savvy-css\n[circle-image]: https://circleci.com/gh/savvy-css/generator-savvy-css/tree/master.svg?style=svg&circle-token={{CIRCLE_TOKEN}}\n[circle-url]: https://circleci.com/gh/savvy-css/generator-savvy-css/tree/master\n[daviddm-image]: https://david-dm.org/savvy-css/generator-savvy-css.svg?theme=shields.io\n[daviddm-url]: https://david-dm.org/savvy-css/generator-savvy-css\n',
+25 silly publish   readmeFilename: 'README.md',
+25 silly publish   gitHead: '5c13a56b6dc2a54759aeba95e0093d8194e4e5c2',
+25 silly publish   bugs: { url: 'https://github.com/savvy-css/generator-savvy-css/issues' },
+25 silly publish   _id: '@savvy-css/generator-savvy-css@0.0.0',
+25 silly publish   _shasum: '8b01d2cd5bc9906415526db5b2b11a605b691d1f',
+25 silly publish   _from: '.' }
+26 verbose getPublishConfig undefined
+27 silly mapToRegistry name @savvy-css/generator-savvy-css
+28 silly mapToRegistry scope (from package name) @savvy-css
+29 verbose mapToRegistry no registry URL found in name for scope @savvy-css
+30 silly mapToRegistry using default registry
+31 silly mapToRegistry registry https://registry.npmjs.org/
+32 silly mapToRegistry data Result {
+32 silly mapToRegistry   raw: '@savvy-css/generator-savvy-css',
+32 silly mapToRegistry   scope: '@savvy-css',
+32 silly mapToRegistry   escapedName: '@savvy-css%2fgenerator-savvy-css',
+32 silly mapToRegistry   name: '@savvy-css/generator-savvy-css',
+32 silly mapToRegistry   rawSpec: '',
+32 silly mapToRegistry   spec: 'latest',
+32 silly mapToRegistry   type: 'tag' }
+33 silly mapToRegistry uri https://registry.npmjs.org/@savvy-css%2fgenerator-savvy-css
+34 verbose publish registryBase https://registry.npmjs.org/
+35 silly publish uploading /home/brian/.npm/@savvy-css/generator-savvy-css/0.0.0/package.tgz
+36 verbose request uri https://registry.npmjs.org/@savvy-css%2fgenerator-savvy-css
+37 verbose request sending authorization for write operation
+38 info attempt registry request try #1 at 10:15:18 PM
+39 verbose request using bearer token for auth
+40 verbose request id 4dd29ef8876dd136
+41 http request PUT https://registry.npmjs.org/@savvy-css%2fgenerator-savvy-css
+42 http 403 https://registry.npmjs.org/@savvy-css%2fgenerator-savvy-css
+43 verbose headers { 'content-type': 'application/json',
+43 verbose headers   'cache-control': 'max-age=0',
+43 verbose headers   'content-length': '95',
+43 verbose headers   'accept-ranges': 'bytes',
+43 verbose headers   date: 'Sat, 20 May 2017 06:15:25 GMT',
+43 verbose headers   via: '1.1 varnish',
+43 verbose headers   connection: 'keep-alive',
+43 verbose headers   'x-served-by': 'cache-sea1044-SEA',
+43 verbose headers   'x-cache': 'MISS',
+43 verbose headers   'x-cache-hits': '0',
+43 verbose headers   'x-timer': 'S1495260925.054306,VS0,VE451' }
+44 verbose request invalidating /home/brian/.npm/registry.npmjs.org/_40savvy-css_252fgenerator-savvy-css on PUT
+45 error publish Failed PUT 403
+46 verbose stack Error: "You cannot publish over the previously published version 0.0.0." : @savvy-css/generator-savvy-css
+46 verbose stack     at makeError (/home/brian/n/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+46 verbose stack     at CachingRegistryClient.<anonymous> (/home/brian/n/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
+46 verbose stack     at Request._callback (/home/brian/n/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+46 verbose stack     at Request.self.callback (/home/brian/n/lib/node_modules/npm/node_modules/request/request.js:187:22)
+46 verbose stack     at emitTwo (events.js:106:13)
+46 verbose stack     at Request.emit (events.js:191:7)
+46 verbose stack     at Request.<anonymous> (/home/brian/n/lib/node_modules/npm/node_modules/request/request.js:1048:10)
+46 verbose stack     at emitOne (events.js:96:13)
+46 verbose stack     at Request.emit (events.js:188:7)
+46 verbose stack     at IncomingMessage.<anonymous> (/home/brian/n/lib/node_modules/npm/node_modules/request/request.js:969:12)
+47 verbose statusCode 403
+48 verbose pkgid @savvy-css/generator-savvy-css
+49 verbose cwd /mnt/c/Users/brsip/savvy-css/generator-savvy
+50 error Linux 4.4.0-43-Microsoft
+51 error argv "/home/brian/n/bin/node" "/home/brian/n/bin/npm" "publish"
+52 error node v6.10.3
+53 error npm  v3.10.10
+54 error code E403
+55 error "You cannot publish over the previously published version 0.0.0." : @savvy-css/generator-savvy-css
+56 error If you need help, you may report this error at:
+56 error     <https://github.com/npm/npm/issues>
+57 verbose exit [ 1, true ]

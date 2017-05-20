@@ -8,18 +8,18 @@
 
 ## Installation
 
-First, install [Yeoman](http://yeoman.io) and <%- generatorName %> using either [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/))...
+First, install [Yeoman](http://yeoman.io) and this generator using either [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/))...
 
 ```bash
 npm install -g yo
-npm install -g <%- generatorName %>
+npm install -g @savvy-css/generator-savvy-css
 ```
 
 ... or [yarn](https://yarnpkg.com/en/).
 
 ```bash
 yarn global add yo
-yarn global add <%- generatorName %>
+yarn global add @savvy-css/generator-savvy-css
 ```
 
 Then generate your new project:
