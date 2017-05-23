@@ -51,7 +51,10 @@ describe('generator-savvy-css:app', () => {
         'savvy-css',
         'savvy-css-package',
         `savvy-css ${TEST_MODULE_NAME_SPACED}`
-      ]
+      ],
+      scripts: {
+        transform: `postcss index.css -o build/${TEST_MODULE_NAME}.css --config postcss.config.js`
+      }
     });
   });
 });

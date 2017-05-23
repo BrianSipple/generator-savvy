@@ -1,5 +1,5 @@
 Arguments: 
-  /home/brian/n/bin/node /usr/share/yarn/bin/yarn.js
+  /home/brian/n/bin/node /usr/share/yarn/bin/yarn.js install
 
 PATH: 
   /home/brian/.rbenv/shims:/home/brian/.rbenv/bin:/usr/local/bin:/usr/local/sbin:/home/brian/n/bin:/home/brian/.config/yarn/global/node_modules/.bin:/Applications/Postgres.app/Contents/Versions/latest/bin:/Applications/Julia-0.5.app/Contents/Resources/julia/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/Python27:/mnt/c/Python27/Scripts:/mnt/c/Python36/Scripts:/mnt/c/Python36:/mnt/c/Windows/System32:/mnt/c/Windows:/mnt/c/Windows/System32/wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Users/brsip/AppData/Roaming/nvm:/mnt/c/Program Files/nodejs:/mnt/c/Program Files/Git/cmd:/mnt/c/ProgramData/chocolatey/lib/Elixir/bin:/mnt/c/Program Files (x86)/Yarn/bin:/mnt/c/Users/brsip/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files (x86)/Microsoft VS Code/bin:/mnt/c/Users/brsip/AppData/Roaming/npm:/mnt/c/Users/brsip/AppData/Local/Yarn/bin
@@ -16,7 +16,7 @@ Platform:
 npm manifest: 
   {
     "name": "@savvy-css/generator-savvy-css",
-    "version": "0.0.1",
+    "version": "0.0.4",
     "description": "Generator for scaffolding out a Savvy module or utility.",
     "homepage": "https://github.com/savvy-css/generator-savvy-css",
     "repository": "https://github.com/savvy-css/generator-savvy-css",
@@ -63,7 +63,8 @@ npm manifest:
       "deploy": "np",
       "prepublish": "nsp check",
       "pretest": "eslint . --ignore-path .gitignore --fix",
-      "test": "jest"
+      "test": "jest --forceExit",
+      "test:dev": "jest"
     },
     "eslintConfig": {
       "extends": "xo-space",
@@ -4114,5 +4115,5 @@ Lockfile:
       wrap-ansi "^2.0.0"
 
 Trace: 
-  Error: ENOENT: no such file or directory, lstat '/mnt/c/Users/brsip/projects/savvy-css/generator-savvy/node_modules/.bin'
+  Error: ENOENT: no such file or directory, lstat '/mnt/c/Users/brsip/projects/savvy-css/generator-savvy-css/node_modules/.bin'
       at Error (native)
