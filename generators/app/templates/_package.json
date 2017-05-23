@@ -29,7 +29,6 @@
     "cssnano": "^3.10.0",
     "del-cli": "^1.0.0",
     "live-server": "^1.2.0",
-    "np": "^2.15.0",
     "postcss-cli": "^4.0.0",
     "postcss-cssnext": "^2.11.0",
     "postcss-import": "^10.0.0",

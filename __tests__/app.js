@@ -8,7 +8,7 @@ const { CONCERN_OBJECT_PATTERN } = require('../utils/concerns');
 describe('generator-savvy-css:app', () => {
   const TEST_MODULE_NAME = 'grid-object-patterns';
   const TEST_MODULE_NAME_SPACED = 'grid object patterns';
-  const TEST_PACKAGE_NAME = 'grid-object-patterns';
+  const TEST_PACKAGE_NAME = '@savvy-css/grid-object-patterns';
 
   beforeAll(() => {
     return helpers

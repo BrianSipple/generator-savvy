@@ -1,6 +1,6 @@
 /* eslint-env node */
 
-module.exports = function(ctx) {
+module.exports = function (ctx) {
   return {
     plugins: {
       // ⚠️ Order matters! PostCSS will run plugins in the order listed.

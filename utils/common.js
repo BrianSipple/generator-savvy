@@ -10,7 +10,7 @@ function generateModuleName(moduleSubject, concernType) {
 }
 
 function generatePackageName(moduleName) {
-  return `${moduleName}`;
+  return `@savvy-css/${moduleName}`;
 }
 
 function generateGithubBaseURL(moduleName) {
