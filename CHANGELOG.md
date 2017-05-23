@@ -1,3 +1,9 @@
+# 0.0.6 &mdash; May 23, 2017
+
+- **[PATCH]** Fix usage of `np` and package naming.
+- **[PATCH]** Add `@savvy-css` namespace to package name.
+
+
 # 0.0.5 &mdash; May 23, 2017
 
 - **[ENHANCEMENT]** Update generated dependencies and build scripts ([#3](https://github.com/savvy-css/generator-savvy-css/pull/3)).
