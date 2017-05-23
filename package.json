@@ -44,6 +44,7 @@
     "testEnvironment": "node"
   },
   "scripts": {
+    "deploy": "np",
     "prepublish": "nsp check",
     "pretest": "eslint . --ignore-path .gitignore --fix",
     "test": "jest"
