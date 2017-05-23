@@ -31,5 +31,5 @@ npm install --save-dev <%= modulePackageName %>
 [dependencies-badge]: https://img.shields.io/david/savvy-css/<%= modulePackageName %>.svg
 [dependencies-badge-url]: https://david-dm.org/savvy-css/<%= modulePackageName %>
 [devDependencies-badge]: https://img.shields.io/david/dev/savvy-css/<%= modulePackageName %>.svg
-[devDependencies-badge-url]: https://david-dm.org/Ticketfly-UI/<%= modulePackageName %>#info=devDependencies
+[devDependencies-badge-url]: https://david-dm.org/savvy-css/<%= modulePackageName %>#info=devDependencies
 

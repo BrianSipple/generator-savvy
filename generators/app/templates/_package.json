@@ -6,7 +6,7 @@
   "style": "build/<%= moduleFileName %>",
   "keywords": [
     "savvy-css",
-    "savvy-css module",
+    "savvy-css-package",
     "savvy-css <%= moduleNameSpaced %>",
     "savvy-css <%= concernType %>",
     "css"
