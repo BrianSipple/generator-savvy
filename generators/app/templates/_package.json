@@ -28,16 +28,16 @@
   "devDependencies": {
     "cssnano": "^3.10.0",
     "cssstats": "^3.0.0",
-    "del-cli": "^0.2.1",
+    "del-cli": "^1.0.0",
     "live-server": "^1.2.0",
-    "postcss-cli": "^3.0.0",
-    "postcss-cssnext": "^2.10.0",
-    "postcss-custom-properties": "^5.0.2",
+    "postcss-cli": "^4.0.0",
+    "postcss-cssnext": "^2.11.0",
+    "postcss-custom-properties": "^6.0.1",
     "postcss-discard-comments": "^2.0.4",
-    "postcss-import": "^9.1.0",
+    "postcss-import": "^10.0.0",
     "postcss-reporter": "^3.0.0",
-    "stylelint": "^7.9.0",
-    "stylelint-config-savvy": "^0.1.0"
+    "stylelint": "^7.10.0",
+    "@savvy-css/stylelint-config-savvy": "^0.1.0"
   },
   "scripts": {
     "clean": "del build/**",
