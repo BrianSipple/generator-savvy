@@ -3,6 +3,7 @@ coverage
 tmp
 
 yarn-debug
+npm-debug.log
 
 # local vscode settings
 .vscode/settings.json

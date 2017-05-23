@@ -12,5 +12,12 @@
       "authorName": "Brian Sipple",
       "authorContact": "brian@echobind.com"
     }
+  },
+  "@savvy-css/generator-savvy-css": {
+    "promptValues": {
+      "githubUserName": "BrianSipple",
+      "authorName": "Brian Sipple",
+      "authorContact": "@BrianSipple"
+    }
   }
 }
