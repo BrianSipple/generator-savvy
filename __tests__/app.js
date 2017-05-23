@@ -49,6 +49,7 @@ describe('generator-savvy-css:app', () => {
       },
       keywords: [
         'savvy-css',
+        'savvy-css-package',
         `savvy-css ${TEST_MODULE_NAME_SPACED}`
       ]
     });
