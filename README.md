@@ -4,7 +4,7 @@
 [![Build Status][circle-image]][circle-url] 
 [![Dependency Status][daviddm-image]][daviddm-url]
 
-> Generator for scaffolding out a Savvy module or utility.
+> Generator for scaffolding out a Savvy CSS module..
 
 ## Installation
 

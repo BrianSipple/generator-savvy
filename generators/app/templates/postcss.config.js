@@ -1,6 +1,8 @@
 /* eslint-env node */
 
 module.exports = function (ctx) {
+  const { file: { basename: CURRENT_FILE_BASE_NAME } } = ctx;
+
   return {
     plugins: {
       // ⚠️ Order matters! PostCSS will run plugins in the order listed.
@@ -11,7 +13,7 @@ module.exports = function (ctx) {
       'postcss-cssnext': {
         features: {
           customProperties: {
-            preserve: true
+            preserve: CURRENT_FILE_BASE_NAME !== 'index.css'
           }
         }
       },
