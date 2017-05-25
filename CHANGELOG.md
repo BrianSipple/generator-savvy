@@ -1,3 +1,8 @@
+# 0.0.12 &mdash; May 25, 2017
+
+- **[PATCH]** Fix generated deploy script in package.json.
+
+
 # 0.0.11 &mdash; May 25, 2017
 
 - **[ENHANCEMENT]** Small tweaks to generated build scripts
