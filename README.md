@@ -22,6 +22,21 @@ yarn global add yo
 yarn global add @savvy-css/generator-savvy-css
 ```
 
+Each project designed to be [published on NPM](https://www.npmjs.com/org/savvy-css) using [`np`](https://github.com/sindresorhus/np).
+Right now, instead of packaging `np` with each project, it's recommended to use your own
+global installation: 
+
+```shell
+yarn global add np
+```
+
+or 
+
+```shell
+npm install -g np
+```
+
+
 ## Usage 
 
 Run the `yo` command to generate your new project:
@@ -31,7 +46,7 @@ yo @savvy-css/generator-savvy-css
 ```
 
 From there, the generator is setup to configure a Savvy CSS module within 
-one of Savvy's [categories of concerns](). 
+one of Savvy's [categories of concerns](https://github.com/savvy-css/savvy/blob/master/doc/architecture/design-principles.md). 
 
 Simply select your concern (for example, "utility"), the _subject_ of your module _within_ the context of that concern (for example, "spacing"), and from there, after a few more straightforward prompts, the generator will know how to scaffold your project!
 
