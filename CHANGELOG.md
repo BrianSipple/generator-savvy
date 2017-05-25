@@ -1,3 +1,9 @@
+# 0.0.9 &mdash; May 25, 2017
+
+- **[ENHANCEMENT]** Improve generated package.json scripts
+- **[ENHANCEMENT]** Add testing and test serving scripts to generated `.vscode` config.
+
+
 # 0.0.9 &mdash; May 24, 2017
 
 - **[ENHANCEMENT]** Add `.vscode` directory containing `launch.json` to generated files.
