@@ -1,4 +1,9 @@
-# 0.0.9 &mdash; May 25, 2017
+# 0.0.11 &mdash; May 25, 2017
+
+- **[ENHANCEMENT]** Small tweaks to generated build scripts
+
+
+# 0.0.10 &mdash; May 25, 2017
 
 - **[ENHANCEMENT]** Improve generated package.json scripts
 - **[ENHANCEMENT]** Add testing and test serving scripts to generated `.vscode` config.

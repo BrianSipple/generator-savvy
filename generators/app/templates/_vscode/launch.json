@@ -39,7 +39,7 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Transform | Tests",
+      "name": "Transform | Tests | Watch",
       "program": "${workspaceRoot}/node_modules/postcss-cli/bin/postcss",
       "args": [
         "test/index-test.css",
@@ -48,7 +48,8 @@
         "-u",
         "postcss-cssnext",
         "-o",
-        "build/test.css"
+        "build/test.css",
+        "-w"
       ]
     },
     {
@@ -58,7 +59,7 @@
       "program": "${workspaceRoot}/node_modules/live-server/live-server.js",
       "args": [
         "--port=9823",
-        "--open=/test"
+        "--open=test/"
       ]
     }
   ]
