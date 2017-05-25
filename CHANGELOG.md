@@ -1,3 +1,8 @@
+# 0.0.8 &mdash; May 24, 2017
+
+- **[ENHANCEMENT]** Minor improvements to default generator options.
+
+
 # 0.0.7 &mdash; May 24, 2017
 
 - **[PATCH]** Fix `stylelint` config and fix postcss config in `test/` dir.
