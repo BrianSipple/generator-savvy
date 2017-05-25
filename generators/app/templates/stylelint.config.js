@@ -1,4 +1,4 @@
 /* eslint-env node */
 module.exports = {
-  extends: 'stylelint-config-savvy'
+  extends: '@savvy-css/stylelint-config-savvy'
 };

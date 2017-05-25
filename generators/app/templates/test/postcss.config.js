@@ -2,23 +2,23 @@
 
 const path = require('path');
 
-module.exports = {
-  use: [
-    'stylelint',
-    'postcss-import',
-    'postcss-cssnext',
-    'postcss-reporter'
-  ],
+module.exports = function (/* ctx */) {
+  return {
+    plugins: {
+      stylelint: {
+        configFile: path.join(__dirname, '../stylelint.config.js')
+      },
 
-  stylelint: {
-    configFile: path.join(__dirname, '../stylelint.config.js')
-  },
+      'postcss-import': {},
+      'postcss-cssnext': {},
 
-  'postcss-reporter': {
-    clearAllMessages: true,
-    throwError: true,
-    plugins: [
-      'stylelint'
-    ]
-  }
+      'postcss-reporter': {
+        clearAllMessages: true,
+        throwError: true,
+        plugins: [
+          'stylelint'
+        ]
+      }
+    }
+  };
 };
