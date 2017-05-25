@@ -22,7 +22,23 @@ yarn global add yo
 yarn global add @savvy-css/generator-savvy-css
 ```
 
+## Usage 
+
+Run the `yo` command to generate your new project:
+
+```bash
+yo @savvy-css/generator-savvy-css
+```
+
+From there, the generator is setup to configure a Savvy CSS module within 
+one of Savvy's [categories of concerns](https://github.com/savvy-css/savvy/blob/master/doc/architecture/design-principles.md). 
+
+Simply select your concern (for example, "utility"), the _subject_ of your module _within_ the context of that concern (for example, "spacing"), and from there, after a few more straightforward prompts, the generator will know how to scaffold your project!
+
+### Deployment
+
 Each project designed to be [published on NPM](https://www.npmjs.com/org/savvy-css) using [`np`](https://github.com/sindresorhus/np).
+
 Right now, instead of packaging `np` with each project, it's recommended to use your own
 global installation: 
 
@@ -36,19 +52,33 @@ or
 npm install -g np
 ```
 
+#### 🔑 Important Note
 
-## Usage 
+The [Savvy CSS organization](https://github.com/savvy-css) currently lacks the funding for private GitHub repositories 😛. 
 
-Run the `yo` command to generate your new project:
+This means that before packages can be published under the `@savvy-css` namespace using `np`, an initial publish will need to be done manually with the `--access publish` flag being passed.
 
-```bash
-yo @savvy-css/generator-savvy-css
+Please do this with the `v0.0.0` files after they are generated. First, update the date in [CHANGELOG.md](./CHANGELOG.md) and push the project to Github:
+
+```shell
+git remote add origin <repo_url>
+git add --all
+git commit -m 'released v0.0.0'
+git push --set-upstream origin master
 ```
 
-From there, the generator is setup to configure a Savvy CSS module within 
-one of Savvy's [categories of concerns](https://github.com/savvy-css/savvy/blob/master/doc/architecture/design-principles.md). 
+Then create and push a tag to Github:
 
-Simply select your concern (for example, "utility"), the _subject_ of your module _within_ the context of that concern (for example, "spacing"), and from there, after a few more straightforward prompts, the generator will know how to scaffold your project!
+```shell
+git tag v0.0.0
+git push origin master --tags
+```
+
+Finally, publish:
+
+```shell
+npm publish --access public
+```
 
 ## License
 
