@@ -38,7 +38,8 @@ module.exports = class SavvyCSSGenerator extends Generator {
         type: 'input',
         name: 'githubUserName',
         message: 'What is your GitHub username',
-        store: true
+        store: true,
+        default: 'BrianSipple'
       },
       {
         type: 'input',
@@ -52,7 +53,7 @@ module.exports = class SavvyCSSGenerator extends Generator {
         name: 'authorContact',
         message: 'What is your preferred contact name (email address, Twitter handle, etc)?',
         store: true,
-        default: ''
+        default: '@Brian_Sipple'
       }
     ];
 

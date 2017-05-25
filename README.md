@@ -22,11 +22,18 @@ yarn global add yo
 yarn global add @savvy-css/generator-savvy-css
 ```
 
-Then generate your new project:
+## Usage 
+
+Run the `yo` command to generate your new project:
 
 ```bash
 yo @savvy-css/generator-savvy-css
 ```
+
+From there, the generator is setup to configure a Savvy CSS module within 
+one of Savvy's [categories of concerns](). 
+
+Simply select your concern (for example, "utility"), the _subject_ of your module _within_ the context of that concern (for example, "spacing"), and from there, after a few more straightforward prompts, the generator will know how to scaffold your project!
 
 ## License
 
