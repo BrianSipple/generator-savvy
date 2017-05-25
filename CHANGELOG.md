@@ -1,3 +1,10 @@
+# 0.0.9 &mdash; May 24, 2017
+
+- **[ENHANCEMENT]** Add `.vscode` directory containing `launch.json` to generated files.
+- **[ENHANCEMENT]** Add logic to `postcss.config.js` so that custom properties aren't preserved 
+when transforming `index.css`.
+
+
 # 0.0.8 &mdash; May 24, 2017
 
 - **[ENHANCEMENT]** Minor improvements to default generator options.
