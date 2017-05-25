@@ -1,3 +1,8 @@
+# 0.0.7 &mdash; May 24, 2017
+
+- **[PATCH]** Fix `stylelint` config and fix postcss config in `test/` dir.
+
+
 # 0.0.6 &mdash; May 23, 2017
 
 - **[PATCH]** Fix usage of `np` and package naming.
