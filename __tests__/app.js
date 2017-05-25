@@ -25,6 +25,7 @@ describe('generator-savvy-css:app', () => {
   it('creates files', () => {
     assert.file([
       '.gitignore',
+      '.vscode/launch.json',
       'CHANGELOG.md',
       'index.css',
       'LICENSE',

@@ -111,6 +111,7 @@ module.exports = class SavvyCSSGenerator extends Generator {
     // "Move" files whose templates needed to be named differently
     // than their final file name.
     move('_package.json', 'package.json');
+    move('_vscode/*', '.vscode/');
     move('gitignore', '.gitignore');
     move('lib/_main-file.css', `lib/${this.props.moduleName}.css`);
   }

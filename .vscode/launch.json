@@ -34,7 +34,7 @@
       "type": "node",
       "request": "launch",
       "name": "Launch Tests",
-      "program": "${workspaceRoot}/node_modules/.bin/jest",
+      "program": "${workspaceRoot}/node_modules/jest-cli/bin/jest.js",
       "args": [
         "--runInBand"
       ]
