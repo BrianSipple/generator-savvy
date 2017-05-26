@@ -1,3 +1,8 @@
+# 0.0.13 &mdash; May 25, 2017
+
+- **[ENHANCEMENT]** Add `nsp` and `nsp check` prepublish step to generated projects.
+
+
 # 0.0.12 &mdash; May 25, 2017
 
 - **[PATCH]** Fix generated deploy script in package.json.
