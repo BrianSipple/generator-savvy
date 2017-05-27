@@ -61,6 +61,7 @@ This means that before packages can be published under the `@savvy-css` namespac
 Please do this with the `v0.0.0` files after they are generated. First, update the date in [CHANGELOG.md](./CHANGELOG.md) and push the project to Github:
 
 ```shell
+git init
 git remote add origin <repo_url>
 git add --all
 git commit -m 'released v0.0.0'
