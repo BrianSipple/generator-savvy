@@ -1,3 +1,8 @@
+# 0.0.14 &mdash; May 27, 2017
+
+- **[ENHANCEMENT]** Improve semantic structure of generated `test/index.html`.
+
+
 # 0.0.13 &mdash; May 25, 2017
 
 - **[ENHANCEMENT]** Add `nsp` and `nsp check` prepublish step to generated projects.
