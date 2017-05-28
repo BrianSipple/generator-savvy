@@ -1,3 +1,8 @@
+# 0.0.15 &mdash; May 27, 2017
+
+- **[PATCH]** Fix generated package name in `README`.
+
+
 # 0.0.14 &mdash; May 27, 2017
 
 - **[ENHANCEMENT]** Improve semantic structure of generated `test/index.html`.
