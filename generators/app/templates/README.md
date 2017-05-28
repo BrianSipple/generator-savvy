@@ -24,12 +24,12 @@ npm install --save-dev <%= modulePackageName %>
 ## Usage
 
 
-[npm-badge]: https://img.shields.io/npm/v/@savvy-css/<%= modulePackageName %>.svg
-[npm-badge-url]: https://www.npmjs.com/package/@savvy-css/<%= modulePackageName %>
-[license-badge]: https://img.shields.io/npm/l/@savvy-css/<%= modulePackageName %>.svg
+[npm-badge]: https://img.shields.io/npm/v/@savvy-css/<%= moduleName %>.svg
+[npm-badge-url]: https://www.npmjs.com/package/@savvy-css/<%= moduleName %>
+[license-badge]: https://img.shields.io/npm/l/@savvy-css/<%= moduleName %>.svg
 [license-badge-url]: LICENSE
-[dependencies-badge]: https://img.shields.io/david/savvy-css/<%= modulePackageName %>.svg
-[dependencies-badge-url]: https://david-dm.org/savvy-css/<%= modulePackageName %>
-[devDependencies-badge]: https://img.shields.io/david/dev/savvy-css/<%= modulePackageName %>.svg
-[devDependencies-badge-url]: https://david-dm.org/savvy-css/<%= modulePackageName %>#info=devDependencies
+[dependencies-badge]: https://img.shields.io/david/savvy-css/<%= moduleName %>.svg
+[dependencies-badge-url]: https://david-dm.org/savvy-css/<%= moduleName %>
+[devDependencies-badge]: https://img.shields.io/david/dev/savvy-css/<%= moduleName %>.svg
+[devDependencies-badge-url]: https://david-dm.org/savvy-css/<%= moduleName %>#info=devDependencies
 
