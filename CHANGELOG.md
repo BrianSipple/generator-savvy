@@ -1,3 +1,9 @@
+# 0.1.0 &mdash; June 24, 2017
+
+- **[ENHANCEMENT]** Update generator with postcss-reporter options ([#6](https://github.com/savvy-css/generator-savvy-css/pull/6)).
+- **[ENHANCEMENT]** Update generated package versions and remove postcss-reporter dependency ([#6](https://github.com/savvy-css/generator-savvy-css/pull/6)).
+
+
 # 0.0.15 &mdash; May 27, 2017
 
 - **[PATCH]** Fix generated package name in `README`.
