@@ -46,7 +46,7 @@ describe('generator-savvy-css:app', () => {
       style: `build/${TEST_MODULE_NAME}.css`,
       devDependencies: {
         'postcss-cssnext': '^2.11.0',
-        'postcss-cli': '^4.0.0'
+        'postcss-cli': '^4.1.0'
       },
       keywords: [
         'savvy-css',
