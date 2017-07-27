@@ -1,3 +1,8 @@
+# 0.1.3 &mdash; July 27, 2017
+
+- **[ENHANCEMENT]** Update generated project to `@savvy-css/stylelint-config-savvy` @ `0.2.0`.
+
+
 # 0.1.2 &mdash; July 27, 2017
 
 - **[ENHANCEMENT]** Update generated README with usage instruction.
