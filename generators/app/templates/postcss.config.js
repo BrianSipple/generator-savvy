@@ -2,7 +2,7 @@
 
 const path = require('path');
 
-module.exports = (ctx) => {
+module.exports = ctx => {
   const { file: { basename: CURRENT_FILE_BASE_NAME, dirname: fileDirName } } = ctx;
 
   return {
