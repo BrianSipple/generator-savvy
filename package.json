@@ -45,7 +45,7 @@
   },
   "scripts": {
     "deploy": "np",
-    "prepublish": "nsp check",
+    "prepare": "nsp check",
     "pretest": "eslint . --ignore-path .gitignore --fix",
     "test": "jest --forceExit",
     "test:dev": "jest"
