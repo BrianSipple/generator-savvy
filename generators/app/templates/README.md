@@ -21,7 +21,18 @@ yarn add --dev <%= modulePackageName %>
 npm install --save-dev <%= modulePackageName %>
 ```
 
+
 ## Usage
+
+Within a project that's capable of importing CSS, simply import
+the module by its package name within your own CSS:
+
+```css
+@import "<%= modulePackageName %>";
+
+```
+
+Importing this module will add [its properties](/lib/<%= moduleFileName %>.css) to your project. To override them, simply define them in any portion of your CSS that's imported/processed later.
 
 
 [npm-badge]: https://img.shields.io/npm/v/@savvy-css/<%= moduleName %>.svg
