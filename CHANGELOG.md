@@ -1,3 +1,9 @@
+# 0.1.1 &mdash; July 27, 2017
+
+- **[ENHANCEMENT]** Change `prepublish` to `prepublishOnly` in generated `package.json`.
+- **[ENHANCEMENT]** Change `prepublish` to `prepare` in `package.json` script.
+
+
 # 0.1.0 &mdash; June 24, 2017
 
 - **[ENHANCEMENT]** Update generator with postcss-reporter options ([#6](https://github.com/savvy-css/generator-savvy-css/pull/6)).
