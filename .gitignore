@@ -2,6 +2,7 @@ node_modules
 coverage
 tmp
 
+.DS_Store
 yarn-debug
 npm-error.log
 npm-debug.log
