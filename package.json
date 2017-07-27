@@ -1,6 +1,6 @@
 {
   "name": "@savvy-css/generator-savvy-css",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Generator for scaffolding out a Savvy module or utility.",
   "homepage": "https://github.com/savvy-css/generator-savvy-css",
   "repository": "https://github.com/savvy-css/generator-savvy-css",
