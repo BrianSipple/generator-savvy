@@ -1,3 +1,8 @@
+# 0.1.2 &mdash; July 27, 2017
+
+- **[ENHANCEMENT]** Update generated README with usage instruction.
+
+
 # 0.1.1 &mdash; July 27, 2017
 
 - **[ENHANCEMENT]** Change `prepublish` to `prepublishOnly` in generated `package.json`.
